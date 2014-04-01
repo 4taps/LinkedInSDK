@@ -2,7 +2,7 @@
 //  VKDialog.h
 //  WC
 //
-//  Created by Илья Еловиков on 26.04.12.
+//  Created by Ilya Elovikov on 26.04.12.
 //  Copyright (c) 2012 i.elovikov@gmail.com. All rights reserved.
 //
 

@@ -114,6 +114,8 @@
 		8FC04ECA18EAE28D0056EBA6 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FC04DAE18E5A3730056EBA6 /* Base64Transcoder.c */; };
 		8FC04ECB18EAE28D0056EBA6 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FC04DB018E5A3730056EBA6 /* hmac.c */; };
 		8FC04ECC18EAE28D0056EBA6 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FC04DB218E5A3730056EBA6 /* sha1.c */; };
+		8FC04ECF18EAE8060056EBA6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8FC04ECD18EAE8060056EBA6 /* LICENSE */; };
+		8FC04ED018EAE8060056EBA6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8FC04ECE18EAE8060056EBA6 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,7 +179,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8FC04D6518E5A2FD0056EBA6 /* Lin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC04D6518E5A2FD0056EBA6 /* Lin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Lin.app; path = LinkedInSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC04D6818E5A2FD0056EBA6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8FC04D6A18E5A2FD0056EBA6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8FC04D6C18E5A2FD0056EBA6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -260,6 +262,8 @@
 		8FC04E6018EAD6E70056EBA6 /* LinkedInSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LinkedInSDKTests-Info.plist"; sourceTree = "<group>"; };
 		8FC04E6418EAD6E70056EBA6 /* LinkedInSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedInSDKTests.m; sourceTree = "<group>"; };
 		8FC04E6D18EAD7B50056EBA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/InfoPlist 15-14-19-228.strings"; sourceTree = "<group>"; };
+		8FC04ECD18EAE8060056EBA6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8FC04ECE18EAE8060056EBA6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -359,6 +363,8 @@
 				8FC04D9F18E5A3100056EBA6 /* NSStringUrlParams.h */,
 				8FC04DA018E5A3100056EBA6 /* NSStringUrlParams.m */,
 				8FC04D8018E5A2FD0056EBA6 /* Images.xcassets */,
+				8FC04ECD18EAE8060056EBA6 /* LICENSE */,
+				8FC04ECE18EAE8060056EBA6 /* README.md */,
 				8FC04D6F18E5A2FD0056EBA6 /* Supporting Files */,
 			);
 			path = Lin;
@@ -635,6 +641,8 @@
 			files = (
 				8FC04D8118E5A2FD0056EBA6 /* Images.xcassets in Resources */,
 				8FC04D7318E5A2FD0056EBA6 /* InfoPlist.strings in Resources */,
+				8FC04ED018EAE8060056EBA6 /* README.md in Resources */,
+				8FC04ECF18EAE8060056EBA6 /* LICENSE in Resources */,
 				8FC04D7C18E5A2FD0056EBA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -945,6 +953,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				LINKEDIN_API_KEY = 75aacnxkxhzyx8;
+				LINKEDIN_SECRET_KEY = nNmwcySLkDgnZSNZ;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -957,6 +967,8 @@
 				DSTROOT = /tmp/LinkedInSDK.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LinkedInSDK/LinkedInSDK-Prefix.pch";
+				LINKEDIN_API_KEY = 75aacnxkxhzyx8;
+				LINKEDIN_SECRET_KEY = nNmwcySLkDgnZSNZ;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
