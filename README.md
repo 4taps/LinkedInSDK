@@ -14,7 +14,7 @@ The project is configured for building with the iOS7 SDK with a deployment targe
 
 ### Author
 
-This lybrary was created by Ilya Elovikov (@RavenEIA)
+This lybrary was created by Ilya Elovikov ([@RavenEIA](https://github.com/RavenEIA))
 
 ### Credits:
 
