@@ -21,7 +21,7 @@
 		8FC04D8A18E5A2FD0056EBA6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC04D6C18E5A2FD0056EBA6 /* UIKit.framework */; };
 		8FC04D9218E5A2FD0056EBA6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8FC04D9018E5A2FD0056EBA6 /* InfoPlist.strings */; };
 		8FC04D9418E5A2FD0056EBA6 /* LinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC04D9318E5A2FD0056EBA6 /* LinTests.m */; };
-		8FC04DA318E5A3100056EBA6 /* LinkedInDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC04D9E18E5A3100056EBA6 /* LinkedInDataProvider.m */; };
+		8FC04DA318E5A3100056EBA6 /* LinkedInDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC04D9E18E5A3100056EBA6 /* LinkedInDataProvider.m */; settings = {COMPILER_FLAGS = "-D 'LINKEDIN_API_KEY=@\"$(LINKEDIN_API_KEY)\"' -D 'LINKEDIN_SECRET_KEY=@\"$(LINKEDIN_SECRET_KEY)\"'"; }; };
 		8FC04DA418E5A3100056EBA6 /* NSStringUrlParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC04DA018E5A3100056EBA6 /* NSStringUrlParams.m */; };
 		8FC04DA518E5A3100056EBA6 /* InLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC04DA218E5A3100056EBA6 /* InLoginDialog.m */; };
 		8FC04DB418E5A3730056EBA6 /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC04DA818E5A3730056EBA6 /* NSMutableURLRequest+Parameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -72,7 +72,7 @@
 		8FC04E7C18EAD86C0056EBA6 /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC04DA818E5A3730056EBA6 /* NSMutableURLRequest+Parameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8FC04E7D18EAD86C0056EBA6 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC04DAA18E5A3730056EBA6 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8FC04E7E18EAD86C0056EBA6 /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC04DAC18E5A3730056EBA6 /* NSURL+Base.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8FC04E7F18EAD86C0056EBA6 /* LinkedInDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC04D9E18E5A3100056EBA6 /* LinkedInDataProvider.m */; };
+		8FC04E7F18EAD86C0056EBA6 /* LinkedInDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC04D9E18E5A3100056EBA6 /* LinkedInDataProvider.m */; settings = {COMPILER_FLAGS = "-D 'LINKEDIN_API_KEY=@\"$(LINKEDIN_API_KEY)\"' -D 'LINKEDIN_SECRET_KEY=@\"$(LINKEDIN_SECRET_KEY)\"'"; }; };
 		8FC04E8018EAD86C0056EBA6 /* LPeopleSharesOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC04DFC18E994420056EBA6 /* LPeopleSharesOperation.m */; };
 		8FC04E8118EAD86C0056EBA6 /* LPeopleNetworkUpdatesOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC04DF918E98E810056EBA6 /* LPeopleNetworkUpdatesOperation.m */; };
 		8FC04E8218EAD86C0056EBA6 /* LPeopleGetOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC04DF018E951150056EBA6 /* LPeopleGetOperation.m */; };
@@ -179,7 +179,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8FC04D6518E5A2FD0056EBA6 /* Lin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Lin.app; path = LinkedInSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC04D6518E5A2FD0056EBA6 /* LinkedInSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedInSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC04D6818E5A2FD0056EBA6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8FC04D6A18E5A2FD0056EBA6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8FC04D6C18E5A2FD0056EBA6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -326,7 +326,7 @@
 		8FC04D6618E5A2FD0056EBA6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8FC04D6518E5A2FD0056EBA6 /* Lin.app */,
+				8FC04D6518E5A2FD0056EBA6 /* LinkedInSample.app */,
 				8FC04D8618E5A2FD0056EBA6 /* LinTests.xctest */,
 				8FC04E4A18EAD6E70056EBA6 /* libLinkedInSDK.a */,
 				8FC04E5718EAD6E70056EBA6 /* LinkedInSDKTests.xctest */,
@@ -539,7 +539,7 @@
 			);
 			name = LinkedInSample;
 			productName = Lin;
-			productReference = 8FC04D6518E5A2FD0056EBA6 /* Lin.app */;
+			productReference = 8FC04D6518E5A2FD0056EBA6 /* LinkedInSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8FC04D8518E5A2FD0056EBA6 /* LinTests */ = {
@@ -884,6 +884,8 @@
 				GCC_PREFIX_HEADER = "Lin/Lin-Prefix.pch";
 				INFOPLIST_FILE = "Lin/Lin-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LINKEDIN_API_KEY = 75aacnxkxhzyx8;
+				LINKEDIN_SECRET_KEY = nNmwcySLkDgnZSNZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -898,6 +900,8 @@
 				GCC_PREFIX_HEADER = "Lin/Lin-Prefix.pch";
 				INFOPLIST_FILE = "Lin/Lin-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LINKEDIN_API_KEY = 75aacnxkxhzyx8;
+				LINKEDIN_SECRET_KEY = nNmwcySLkDgnZSNZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -953,8 +957,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				LINKEDIN_API_KEY = 75aacnxkxhzyx8;
-				LINKEDIN_SECRET_KEY = nNmwcySLkDgnZSNZ;
+				LINKEDIN_API_KEY = "your api key";
+				LINKEDIN_SECRET_KEY = "your secret key";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -967,8 +971,8 @@
 				DSTROOT = /tmp/LinkedInSDK.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LinkedInSDK/LinkedInSDK-Prefix.pch";
-				LINKEDIN_API_KEY = 75aacnxkxhzyx8;
-				LINKEDIN_SECRET_KEY = nNmwcySLkDgnZSNZ;
+				LINKEDIN_API_KEY = "your api key";
+				LINKEDIN_SECRET_KEY = "your secret key";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

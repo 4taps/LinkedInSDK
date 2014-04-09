@@ -46,8 +46,8 @@ static LinkedInDataProvider *_instance;
 //
 - (void)initLinkedInApi
 {
-    apikey = @"75aacnxkxhzyx8";
-    secretkey = @"nNmwcySLkDgnZSNZ";
+    apikey    = LINKEDIN_API_KEY;
+    secretkey = LINKEDIN_SECRET_KEY;
     
     consumer = [[OAConsumer alloc] initWithKey:apikey
                                         secret:secretkey
